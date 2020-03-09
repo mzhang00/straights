@@ -17,5 +17,7 @@ Add the following commands to the parser:
         (x1, y1) and (x2, y2) are the influence points for the curve.
 
 For help creating your own image, you might want to use the following graphs:
+
 Bezier: https://www.desmos.com/calculator/jydkmhkxac
+
 Hermite: https://www.desmos.com/calculator/o9owo98ca5
