@@ -27,7 +27,7 @@ def generate_curve_coefs( p0, p1, p2, p3, t ):
         m = make_bezier()
         matrix_mult(m, coefficients)
     else:
-        math = make_hermite()
+        m = make_hermite()
         matrix_mult(m, coefficients)
     return coefficients
 
