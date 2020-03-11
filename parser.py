@@ -66,12 +66,28 @@ def parse_file( fname, edges, transform, screen, color ):
 
         elif line == 'hermite':
             #print 'HERMITE\t' + str(args)
+            
+            add_circle( edges,
+                        float(args[0]), float(args[1]), float(args[2]),
+                        float(args[3]), 0.01 )        
 
         elif line == 'circle':
             #print 'CIRCLE\t' + str(args)
+            
+            add_hermite( edges,
+                         float(args[0]), float(args[1]),
+                         float(args[2]), float(args[3]),
+                         float(args[4]), float(args[5]),
+                         float(args[6]), float(args[7]), 0.01 )
 
         elif line == 'bezier':
             #print 'BEZIER\t' + str(args)
+
+            add_bezier( edges,
+                         float(args[0]), float(args[1]),
+                         float(args[2]), float(args[3]),
+                         float(args[4]), float(args[5]),
+                         float(args[6]), float(args[7]), 0.01 )            
 
         elif line == 'scale':
             #print 'SCALE\t' + str(args)
